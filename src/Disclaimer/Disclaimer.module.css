@@ -1,0 +1,13 @@
+.disclaimer {
+  max-width: 40rem;
+  margin: 5rem auto 2rem auto;
+  background-color: #8a8a8a;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.disclaimer h2 {
+  font-size: 2rem;
+  margin: 0;
+}
