@@ -35,3 +35,7 @@
 .cart:active .cart__badge {
   background-color: #92320c;
 }
+
+.cart__items {
+  background-color: #fff;
+}
