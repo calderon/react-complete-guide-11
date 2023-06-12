@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Header from "./Header";
 import Disclaimer from "./Disclaimer";
-import Meals from "./Meals";
+import AvailableMeals from "./AvailableMeals";
 
 const App = () => {
   return (
@@ -9,7 +9,7 @@ const App = () => {
       <Header></Header>
       <main>
         <Disclaimer />
-        <Meals />
+        <AvailableMeals />
       </main>
     </Fragment>
   );

@@ -1,0 +1,63 @@
+.availableMeal {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.availableMeal:first-child {
+  padding-top: 0;
+}
+
+.availableMeal:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.availableMeal__information {
+  flex: 1;
+}
+
+.availableMeal__name {
+  font-weight: 700;
+  margin: 0;
+}
+
+.availableMeal__description {
+  font-style: italic;
+}
+
+.availableMeal__price {
+  color: #8a2b06;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.availableMeal__control {
+  display: flex;
+  flex-direction: column;
+}
+
+.availableMeal__selectedAmount {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.availableMeal__label {
+  font-weight: 700;
+  margin-right: 1rem;
+}
+
+.availableMeal__input {
+  width: 4rem;
+  padding: 0.2rem;
+}
+
+.availableMeal__button {
+  background-color: #8a2b06;
+  border: 0;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
