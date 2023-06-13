@@ -1,7 +1,8 @@
 import { Fragment } from "react";
-import Header from "./Header";
-import Disclaimer from "./Disclaimer";
-import AvailableMeals from "./AvailableMeals";
+
+import Header from "./components/Header";
+import Disclaimer from "./components/Disclaimer";
+import AvailableMeals from "./components/AvailableMeals";
 
 const App = () => {
   return (
