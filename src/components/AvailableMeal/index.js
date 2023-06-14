@@ -27,6 +27,8 @@ const AvailableMeal = (props) => {
 
 		cartContext.addItem({
 			id: props.id,
+			name: props.name,
+			price: props.price,
 			amount: enteredAmount
 		});
 	};
@@ -40,6 +42,7 @@ const AvailableMeal = (props) => {
 				</p>
 				<p className={classes["availableMeal__price"]}>${props.price}</p>
 			</div>
+
 			<footer className={classes["availableMeal__control"]}>
 				<form
 					className={classes.availableMeal__form}
