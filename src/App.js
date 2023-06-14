@@ -1,18 +1,17 @@
-import { Fragment } from "react";
-
+import CartProvider from "./store/Cart/CartProvider";
 import Header from "./components/Header";
 import Disclaimer from "./components/Disclaimer";
 import AvailableMeals from "./components/AvailableMeals";
 
 const App = () => {
   return (
-    <Fragment>
-      <Header></Header>
+    <CartProvider>
+      <Header />
       <main>
         <Disclaimer />
         <AvailableMeals />
       </main>
-    </Fragment>
+    </CartProvider>
   );
 };
 

@@ -34,6 +34,7 @@ const AvailableMeals = () => {
       {AVAILABLE_MEALS.map((availableMeal) => (
         <AvailableMeal
           key={availableMeal.id}
+          id={availableMeal.id}
           name={availableMeal.name}
           description={availableMeal.description}
           price={availableMeal.price} />

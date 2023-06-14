@@ -33,12 +33,12 @@
   margin-bottom: 0;
 }
 
-.availableMeal__control {
+.availableMeal__form {
   display: flex;
   flex-direction: column;
 }
 
-.availableMeal__selectedAmount {
+.availableMeal__formControl {
   display: block;
   margin-bottom: 1rem;
 }
