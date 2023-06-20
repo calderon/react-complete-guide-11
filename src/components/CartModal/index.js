@@ -5,6 +5,21 @@ import classes from "./CartModal.module.css";
 import CartContext from "../../store/Cart/CartContext";
 
 const CartModalItem = (props) => {
+	const cartContext = useContext(CartContext);
+
+	const removeItemHandler = () => {
+		cartContext.removeItem(props.id);
+	};
+
+	const addItemHandler = () => {
+		cartContext.addItem({
+			id: props.id,
+			name: props.name,
+			price: props.price,
+			amount: 1
+    });
+	};
+
 	return (
 		<article className={classes.cartModalItem}>
 			<div className={classes.cartModalItem__info}>
@@ -14,8 +29,8 @@ const CartModalItem = (props) => {
 			</div>
 
 			<div className={classes.cartModalItem__actions}>
-				<button className={classes.cartModalItem__button}>-</button>
-				<button className={classes.cartModalItem__button}>+</button>
+				<button className={classes.cartModalItem__button} onClick={removeItemHandler}>-</button>
+				<button className={classes.cartModalItem__button} onClick={addItemHandler}>+</button>
 			</div>
 		</article>
 	);
@@ -36,6 +51,8 @@ const CartModal = (props) => {
 				{cartContext.items.map((item) => {
 					return (
 						<CartModalItem
+							key={item.id}
+							id={item.id}
 							name={item.name}
 							price={item.price}
 							amount={item.amount}
